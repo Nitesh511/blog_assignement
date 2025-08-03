@@ -16,31 +16,6 @@ This is a full-featured blog website built using **React + Vite** with state man
 
 ---
 
-## 🔧 Tech Stack
-
-| Layer          | Technology                |
-| -------------- | ------------------------- |
-| Frontend       | React + Vite              |
-| API Layer      | Redux Toolkit + RTK Query |
-| Forms          | Formik + Yup              |
-| Backend (Mock) | [MockAPI.io](https://mockapi.io) |
-| Editor         | React Quill               |
-| UI Alerts      | SweetAlert2               |
-
----
-
-## ⚙️ CRUD Operations
-
-We use **RTK Query** for interacting with `MockAPI.io`:
-
-- `useAddBlogMutation` – Add new blog
-- `useGetAllBlogsQuery` – Fetch all blogs
-- `useUpdateBlogMutation` – Update blog
-- `useDeleteBlogMutation` – Delete blog
-
-### 🔄 Auto Refresh with `tagTypes`
-
-```js
 tagTypes: ["Blog"],
 
 invalidatesTags: ["Blog"], // used in mutation to refetch blogs
@@ -68,4 +43,31 @@ invalidatesTags: ["Blog"], // used in mutation to refetch blogs
 ![Login](./screenshots/login.png)
 ### 🔐 Register
 ![Login](./screenshots/register.png)
+
+
+## 🔧 Tech Stack
+
+| Layer          | Technology                |
+| -------------- | ------------------------- |
+| Frontend       | React + Vite              |
+| API Layer      | Redux Toolkit + RTK Query |
+| Forms          | Formik + Yup              |
+| Backend (Mock) | [MockAPI.io](https://mockapi.io) |
+| Editor         | React Quill               |
+| UI Alerts      | SweetAlert2               |
+
+---
+
+## ⚙️ CRUD Operations
+
+We use **RTK Query** for interacting with `MockAPI.io`:
+
+- `useAddBlogMutation` – Add new blog
+- `useGetAllBlogsQuery` – Fetch all blogs
+- `useUpdateBlogMutation` – Update blog
+- `useDeleteBlogMutation` – Delete blog
+
+### 🔄 Auto Refresh with `tagTypes`
+
+```js
 
