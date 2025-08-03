@@ -44,3 +44,28 @@ We use **RTK Query** for interacting with `MockAPI.io`:
 tagTypes: ["Blog"],
 
 invalidatesTags: ["Blog"], // used in mutation to refetch blogs
+
+## 📸 Screenshots
+
+> Add these inside a folder called `screenshots/` at the root of your project.
+
+### 🏠 Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### 📝 Add Blog
+![Add Blog](./screenshots/Addnew.png)
+
+### 🔍 View Blogs
+![View Blogs](./screenshots/viewBlog.png)
+
+### 🔍 Admin Dash
+![View Blogs](./screenshots/adminDash.png)
+
+### ✏️ Edit Blog
+![Edit Blog](./screenshots/edit-blog.png)
+
+### 🔐 Login
+![Login](./screenshots/login.png)
+### 🔐 Register
+![Login](./screenshots/register.png)
+
