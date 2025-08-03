@@ -1,12 +1,46 @@
-# React + Vite
+# 🚀 React Blog Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-featured blog website built using **React + Vite** with state management via **Redux Toolkit (RTK Query)** and a mock backend powered by **MockAPI.io**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- 📝 Add, View, Edit, and Delete blogs
+- 🔄 Auto-refresh using `tagTypes` in RTK Query
+- 🔐 Authentication (Login, Register, Logout)
+- ✅ Form validation with **Formik + Yup**
+- 🌐 Uses [MockAPI.io](https://mockapi.io) as backend
+- 🖋️ Rich-text blog content (React Quill)
+- 💡 Clean responsive UI with modern design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Tech Stack
+
+| Layer          | Technology                |
+| -------------- | ------------------------- |
+| Frontend       | React + Vite              |
+| API Layer      | Redux Toolkit + RTK Query |
+| Forms          | Formik + Yup              |
+| Backend (Mock) | [MockAPI.io](https://mockapi.io) |
+| Editor         | React Quill               |
+| UI Alerts      | SweetAlert2               |
+
+---
+
+## ⚙️ CRUD Operations
+
+We use **RTK Query** for interacting with `MockAPI.io`:
+
+- `useAddBlogMutation` – Add new blog
+- `useGetAllBlogsQuery` – Fetch all blogs
+- `useUpdateBlogMutation` – Update blog
+- `useDeleteBlogMutation` – Delete blog
+
+### 🔄 Auto Refresh with `tagTypes`
+
+```js
+tagTypes: ["Blog"],
+
+invalidatesTags: ["Blog"], // used in mutation to refetch blogs
